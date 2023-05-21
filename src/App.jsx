@@ -4,8 +4,8 @@ function App() {
       <p className="collosal-tagline">TAGLINEE!</p>
       <h1 className="collosal-title">Hello world!</h1>
       <p className="collosal-description">
-        little bit change to see what sucks, iknow you little shit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam corporis commodi labore magni fuga assumenda, vitae est velit ipsum
-        exercitationem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident amet esse suscipit distinctio, sit quam illum ipsam quo dolor quidem ipsum inventore laudantium totam modi sint non dicta
+        harum asperiores molestiae! Eos laborum maxime magni minus deleniti voluptates quae non. you little shit!
       </p>
     </>
   );
