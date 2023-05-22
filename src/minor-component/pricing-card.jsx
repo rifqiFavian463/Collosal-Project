@@ -1,31 +1,38 @@
 import PropTypes from "prop-types";
 
-function PricingCard({ bgColor = "#3F2379" }) {
+function PricingCard({ bgColor = "bg-[#3F2379]", textColor = "text-[#3F2379]", pricingName = "pricingName", price = "$1200", features = ["feature 1", "feature 2", "feature 3", "feature 4"] }) {
   return (
-    <div className={`pricing-card bg-[${bgColor}]`}>
+    <div className={`pricing-card ${bgColor}`}>
       <div className="row-span-1 grid-cols-2 flex gap-x-2.5">
         <div className="col-span-1">
-          <p>Pricing Name</p>
+          <p>{pricingName}</p>
         </div>
         <div className="col-span-1 pt-1">
           <p className="collosal-description text-xs">Starting from</p>
-          <h2 className="collosal-title">1200$</h2>
+          <h2 className="collosal-title">{price}</h2>
         </div>
       </div>
       <div className="row-span-1 grid-rows-4 text-center leading-9">
-        <div className="row-span-1">Feature 1</div>
-        <div className="row-span-1">Feature 2</div>
-        <div className="row-span-1">Feature 3</div>
-        <div className="row-span-1">Feature 4</div>
+        {features.map((feature, i) => {
+          return (
+            <div className="row-span-1" key={i}>
+              {feature}
+            </div>
+          );
+        })}
       </div>
       <div className="row-span-1 flex justify-center mt-12">
-        <button className="bg-white text-indigo-500 w-[240px] h-[55px] rounded">Button</button>
+        <button className={`bg-white w-[240px] h-[55px] rounded ${textColor}`}>Detail</button>
       </div>
     </div>
   );
 }
 PricingCard.propTypes = {
   bgColor: PropTypes.string.isRequired,
+  textColor: PropTypes.string.isRequired,
+  pricingName: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  features: PropTypes.array.isRequired,
 };
 
 export default PricingCard;
