@@ -26,13 +26,11 @@ function Sliders() {
     arrows: false,
     focusOnSelect: true,
   };
-  const handleClick = () => {
-    sliderRef.current.slickGoTo(1);
-  };
+
   return (
     <div className="w-[85%] m-auto">
       <Slider {...settings} ref={sliderRef}>
-        <div onClick={handleClick}>
+        <div>
           <TestimonialCard
             avatar={avatar2}
             name={"Courtney Henry"}
