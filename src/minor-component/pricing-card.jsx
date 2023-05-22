@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function PricingCard({ bgColor = "bg-[#3F2379]", textColor = "text-[#3F2379]", pricingName = "pricingName", price = "$1200", features = ["feature 1", "feature 2", "feature 3", "feature 4"] }) {
+function PricingCard({ bgColor, textColor, pricingName, price, features }) {
   return (
     <div className={`pricing-card ${bgColor}`}>
       <div className="row-span-1 grid-cols-2 flex gap-x-2.5">
@@ -33,6 +33,14 @@ PricingCard.propTypes = {
   pricingName: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   features: PropTypes.array.isRequired,
+};
+
+PricingCard.defaultProps = {
+  bgColor: "bg-[#3F2379]",
+  textColor: "text-[#3F2379]",
+  pricingName: "pricingName",
+  price: "$1200",
+  features: ["feature 1", "feature 2", "feature 3", "feature 4"],
 };
 
 export default PricingCard;

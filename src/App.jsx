@@ -1,4 +1,6 @@
 import PricingCard from "./minor-component/pricing-card";
+import TestimonialCard from "./minor-component/testimonialCard";
+import avatar1 from "./assets/avatar1.png";
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
         harum asperiores molestiae! Eos laborum maxime magni minus deleniti voluptates quae non. you little shit!
       </p>
       <PricingCard bgColor="bg-[#3F2379]" textColor="text-[#3F2379]" pricingName="UI Design" price="1200$" features={["10 design pages", "Well-documented", "4 revisions", "$100/additional page"]} />
+      <TestimonialCard avatar={avatar1} />
     </>
   );
 }
