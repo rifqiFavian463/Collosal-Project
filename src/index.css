@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --card-dark: #161629;
   --primary: #6016fc;
@@ -47,4 +48,24 @@ body {
   .testimonial-card {
     @apply grid grid-rows-2 justify-center text-center w-[370px] h-[380px] bg-white bg-opacity-5 p-12 box-border;
   }
+}
+
+/* Slick CSS Styling */
+.slick-slider .slick-slide:not(.slick-center) {
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.slick-slider .slick-slide.slick-center {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
 }
