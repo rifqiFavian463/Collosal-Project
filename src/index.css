@@ -26,7 +26,7 @@ body {
 @layer components {
   /* Page */
   .page {
-    @apply bg-hero py-8 overflow-x-hidden;
+    @apply bg-hero bg-cover py-8 overflow-x-hidden;
   }
   .page-container {
     @apply w-[80%] m-auto box-border;
@@ -54,6 +54,14 @@ body {
   /* testimonial Card */
   .testimonial-card {
     @apply grid grid-rows-2 justify-center text-center w-[370px] h-[380px] bg-white bg-opacity-5 p-12 box-border;
+  }
+
+  /* Feature card */
+  .feature-card {
+    @apply w-[328px] h-[276px] bg-white bg-opacity-5 p-10 rounded box-border;
+  }
+  .feature-icon {
+    @apply w-[50px] h-[50px] bg-white bg-opacity-5;
   }
 
   /* Button */
