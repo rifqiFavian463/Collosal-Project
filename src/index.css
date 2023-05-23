@@ -18,13 +18,20 @@
 }
 body {
   font-family: "Noto Sans", sans-serif;
-  background-color: var(--dark);
   font-size: 16px;
   font-weight: 400;
   color: white;
 }
 /*  COMPONENT REUSABLE */
 @layer components {
+  /* Page */
+  .page {
+    @apply bg-hero py-8 overflow-x-hidden;
+  }
+  .page-container {
+    @apply w-[80%] m-auto box-border;
+  }
+
   /* Font */
   .collosal-tagline {
     @apply font-semibold leading-8 text-[var(--green)];
@@ -33,12 +40,12 @@ body {
     @apply font-bold text-[36px] leading-[54px];
   }
   .collosal-description {
-    @apply font-medium leading-[32px] text-[var(--muted)];
+    @apply leading-[32px] text-[var(--muted)] font-normal;
   }
 
   /* pricing Card */
   .pricing-card {
-    @apply grid grid-rows-3 justify-center rounded-md w-[320px] h-[470px] box-border pt-12;
+    @apply grid grid-rows-3 justify-center rounded-md  w-[290px] h-[440px] md:w-[320px] md:h-[470px] box-border pt-12;
   }
   .button-card {
     @apply bg-white text-indigo-500 w-[200px] h-[50px] rounded;
@@ -47,6 +54,11 @@ body {
   /* testimonial Card */
   .testimonial-card {
     @apply grid grid-rows-2 justify-center text-center w-[370px] h-[380px] bg-white bg-opacity-5 p-12 box-border;
+  }
+
+  /* Button */
+  .button-transparent {
+    @apply w-[112px] h-[39px] bg-white text-center bg-opacity-5;
   }
 }
 
@@ -67,5 +79,9 @@ body {
 }
 
 .slick-dots li.slick-active button:before {
+  color: white;
+}
+
+li:hover {
   color: white;
 }

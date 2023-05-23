@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import Slider from "react-slick";
-import TestimonialCard from "../../minor-component/testimonialCard";
+import TestimonialCard from "../../minor-component/testimonial-card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import avatar1 from "../../assets/avatar1.png";
@@ -19,7 +19,7 @@ function Sliders() {
     className: "center",
     centerMode: true,
     infinite: false,
-    centerPadding: "30%",
+    centerPadding: "26%",
     slidesToShow: 1,
     speed: 500,
     dots: true,

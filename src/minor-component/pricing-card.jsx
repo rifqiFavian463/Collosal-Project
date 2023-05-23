@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 function PricingCard({ bgColor, textColor, pricingName, price, features }) {
   return (
     <div className={`pricing-card ${bgColor}`}>
-      <div className="row-span-1 grid-cols-2 flex gap-x-2.5">
+      <div className="row-span-1 grid-cols-2 flex gap-x-2.5 justify-around">
         <div className="col-span-1">
           <p>{pricingName}</p>
         </div>
