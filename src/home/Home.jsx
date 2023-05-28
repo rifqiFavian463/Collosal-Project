@@ -5,6 +5,7 @@ import Sliders from "./component/Sliders";
 import Navbar from "../main-component/Navbar";
 import Hero from "./component/Hero";
 import FeatureCard from "../minor-component/feature-card";
+import Client from "../minor-component/client";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
           <FeatureCard feature="Develop" description="Transform design and write business logic here. Choose the technology you want." icon={codeIcon} />
           <FeatureCard feature="Ship" description="After the work is complete, we will send the project and all its assets to you." icon={boxIcon} />
         </div>
+        <Client />
         <PricingCard bgColor="bg-[#3F2379]" textColor="text-[#3F2379]" pricingName="UI Design" price="1200$" features={["10 design pages", "Well-documented", "4 revisions", "$100/additional page"]} />
         <Sliders />
       </div>
