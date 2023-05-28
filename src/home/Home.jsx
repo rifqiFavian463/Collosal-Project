@@ -6,6 +6,7 @@ import Navbar from "../main-component/Navbar";
 import Hero from "./component/Hero";
 import FeatureCard from "../minor-component/feature-card";
 import Client from "../minor-component/client";
+import CollosalTitle from "../minor-component/title";
 
 function Home() {
   return (
@@ -19,9 +20,21 @@ function Home() {
           <FeatureCard feature="Ship" description="After the work is complete, we will send the project and all its assets to you." icon={boxIcon} />
         </div>
         <Client />
-        <PricingCard bgColor="bg-[#3F2379]" textColor="text-[#3F2379]" pricingName="UI Design" price="1200$" features={["10 design pages", "Well-documented", "4 revisions", "$100/additional page"]} />
-        <Sliders />
+
       </div>
+      <div className="pricising-card-section  bg-[#221048] mb-[120px] p-[90px]  rounded-xl">
+      <CollosalTitle title='What do you need? Choose a service that can help you' subTitle="Get Started" />
+
+        <div className="flex justify-evenly m-[67px] ">
+          <PricingCard bgColor="bg-[#3F2379]" textColor="text-[#3F2379]" pricingName="UI Design" price="1200$" features={["10 design pages", "Well-documented", "4 revisions", "$100/additional page"]} />
+          <PricingCard bgColor="bg-[#233679]" textColor="text-[#3F2379]" pricingName="Development" price="5000$" features={["Web & Mobile", "Well-documented", "8 revisions", "$1000/additional page"]} />
+          <PricingCard bgColor="bg-[#792366]" textColor="text-[#3F2379]" pricingName="Maintance" price="3000$" features={["10 design pages", "Well-documented", "Including Fixing", "$50/additional page"]} />
+        </div>
+      </div>
+        <div className="page-container">
+        <Sliders />
+
+        </div>
     </div>
   );
 }

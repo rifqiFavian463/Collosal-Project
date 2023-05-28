@@ -22,7 +22,7 @@ function PricingCard({ bgColor, textColor, pricingName, price, features }) {
         })}
       </div>
       <div className="row-span-1 flex justify-center mt-12">
-        <button className={`bg-white w-[240px] h-[55px] rounded ${textColor}`}>Detail</button>
+        <button className={`bg-white w-[240px] h-[55px] rounded font-bold ${textColor}`}>Detail</button>
       </div>
     </div>
   );
